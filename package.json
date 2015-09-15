@@ -1,0 +1,21 @@
+{
+  "name": "bindjs-spike",
+  "version": "1.0.0",
+  "description": "Spike of bind.js",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch lib index.js",
+    "test": "echo \"No tests yet\" && exit 0",
+    "upgrade-deps": "npm-check-updates --upgrade"
+  },
+  "author": "Halvard Skogsrud",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.5.0",
+    "npm-check-updates": "^2.2.3"
+  }
+}
