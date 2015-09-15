@@ -35,3 +35,6 @@ node_modules
 *.out
 *.swp
 *~
+
+# Generated files
+public/bundle.js

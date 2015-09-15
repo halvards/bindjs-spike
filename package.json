@@ -5,17 +5,30 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch lib index.js",
+    "start": "nodemon --watch lib --watch public/bundle.js index.js",
     "test": "echo \"No tests yet\" && exit 0",
+    "package": "webpack public/index.js public/bundle.js",
     "upgrade-deps": "npm-check-updates --upgrade"
   },
-  "author": "Halvard Skogsrud",
-  "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3"
+    "bind.js": "^1.0.1",
+    "express": "^4.13.3",
+    "node-uuid": "^1.4.3"
   },
   "devDependencies": {
     "nodemon": "^1.5.0",
-    "npm-check-updates": "^2.2.3"
+    "npm-check-updates": "^2.2.3",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "author": "Halvard Skogsrud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/halvards/bindjs-spike.git"
+  },
+  "homepage": "https://github.com/halvards/bindjs-spike",
+  "issues": {
+    "url": "https://github.com/halvards/bindjs-spike/issues"
   }
 }

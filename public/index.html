@@ -9,12 +9,31 @@
 
   <link rel="stylesheet" type="text/css" href="//oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.css">
 
-  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="//oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js"></script>
 </head>
 <body>
 
-<h1>Hello World!</h1>
+<div class="ui container">
+
+  <h1>Hello World!</h1>
+
+  <p>Score: <input type="number" min=0 max=100 class="score"></p>
+  <p>Score: <input type="range" min=0 max=100 class="score"></p>
+
+</div>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js"></script>
+<script src="https://cdn.rawgit.com/remy/bind/928c52ce335d6fd2c824b536a97efa460554b9e0/dist/bind.min.js"></script>
+<script type="text/javascript">
+console.log('required bind');
+
+var data = Bind({
+  score: 10
+}, {
+  score: '.score'
+});
+</script>
+<!-- <script src="bundle.js"></script> -->
 
 </body>
 <html>
