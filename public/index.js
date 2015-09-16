@@ -1,12 +1,8 @@
 'use strict';
 
 module.exports = function () {
-  var Bind = require('bind.js');
-  console.log('required bind');
+  window.$ = window.jQuery = require('jquery');
 
-  var data = Bind({
-    score: 10
-  }, {
-    score: '.score'
-  });
-}
+  var data = require('./data.js');
+  data();
+}();
