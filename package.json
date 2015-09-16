@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"No tests yet\" && exit 0",
-    "postinstall": "npm install webpack && npm package",
+    "postinstall": "npm install webpack && npm run package",
     "dev": "forever --watch index.js",
     "package": "webpack public/index.js public/bundle.js",
     "upgrade-deps": "npm-check-updates --upgrade"
