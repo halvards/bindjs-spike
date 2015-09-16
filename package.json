@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"No tests yet\" && exit 0",
+    "postinstall": "npm install webpack && npm package",
     "dev": "forever --watch index.js",
     "package": "webpack public/index.js public/bundle.js",
     "upgrade-deps": "npm-check-updates --upgrade"
@@ -14,7 +15,8 @@
   "dependencies": {
     "bind.js": "^1.0.1",
     "express": "^4.13.3",
-    "node-uuid": "^1.4.3"
+    "node-uuid": "^1.4.3",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "forever": "^0.15.1",
