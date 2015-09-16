@@ -1,8 +1,8 @@
 'use strict';
 
-module.exports = function () {
+module.exports = () => {
   window.$ = window.jQuery = require('jquery');
 
-  var data = require('./data.js');
+  let data = require('./data.js');
   data();
 }();

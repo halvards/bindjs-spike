@@ -7,9 +7,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"No tests yet\" && exit 0",
-    "postinstall": "npm install webpack && npm run package",
+    "postinstall": "webpack",
     "dev": "forever --watch index.js",
-    "package": "webpack public/index.js public/bundle.js",
     "upgrade-deps": "npm-check-updates --upgrade"
   },
   "dependencies": {
@@ -19,10 +18,13 @@
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
+    "babel-core": "^5.8.24",
+    "babel-loader": "^5.3.2",
+    "webpack": "^1.12.1"
+  },
+  "optionalDependencies": {
     "forever": "^0.15.1",
-    "npm-check-updates": "^2.2.3",
-    "webpack": "^1.12.1",
-    "webpack-dev-server": "^1.10.1"
+    "npm-check-updates": "^2.2.3"
   },
   "engines": {
     "node": "4.0.x"

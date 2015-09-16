@@ -1,9 +1,9 @@
 'use strict';
 
-module.exports = function () {
-  var Bind = require('bind.js');
+module.exports = () => {
+  let Bind = require('bind.js');
 
-  var data = {
+  let data = {
     score: 10
   };
 

@@ -2,6 +2,10 @@ language: node_js
 # Controlled by .nvmrc
 #node_js:
 #  - "4.0"
+install:
+  - NPM_CONFIG_PRODUCTION=false npm install --no-optional
+before_script:
+  - npm run postinstall
 branches:
   only:
     - master
@@ -11,6 +15,8 @@ sudo: false
 cache:
   directories:
     - node_modules
+before_deploy:
+  - npm prune
 deploy:
   provider: heroku
   api_key:
