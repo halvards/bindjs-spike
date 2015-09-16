@@ -3,7 +3,7 @@ language: node_js
 #node_js:
 #  - "4.0"
 install:
-  - NPM_CONFIG_PRODUCTION=false npm install --no-optional
+  - npm install --no-optional
 before_script:
   - npm run postinstall
 branches:
