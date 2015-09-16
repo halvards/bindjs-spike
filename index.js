@@ -1,3 +1,4 @@
 'use strict';
 
-require('./lib/server')();
+let server = require('./lib/server');
+server();
