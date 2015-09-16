@@ -5,8 +5,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "forever --watch index.js",
+    "start": "node index.js",
     "test": "echo \"No tests yet\" && exit 0",
+    "dev": "forever --watch index.js",
     "package": "webpack public/index.js public/bundle.js",
     "upgrade-deps": "npm-check-updates --upgrade"
   },
