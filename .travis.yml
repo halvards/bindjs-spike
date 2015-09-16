@@ -1,18 +1,20 @@
 language: node_js
-
 # Controlled by .nvmrc
-# node_js:
-#   - "4.0"
-
+#node_js:
+#  - "4.0"
 branches:
   only:
-    - "master"
-
+    - master
 notifications:
   email: false
-
 sudo: false
-
 cache:
   directories:
     - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: VfBTy0Qs3xS55G8TJyS3SNnuK/pJd05fNSgDK66MI7ny7niHjH7At7ed1n4SLOEHsu1T2oJ/sCwVniXjuGW7hX8i2lvnTwGTsY2RVz3YWY0p1RCgiin2Jr+BGL16flnFTnlQyz7b7c6JvoQLk8rEoFRqoJeUNbUZGaxwYLZF8FlAj8HSnURaG2HYHP0BW6bFmQdhb8ZkFkaeFMBmQFz2aeEe0UYChZhCuomB9nDBnFFewKCpPagc18nfr0HdZ5MUbFaxwv/PQmRvIzOQNK4WQRBiNpXc99Lm9IzLUQvij5+rL/Ka4ud3fiEuoYrshYor33UsQ98a6zLe4ixHP3wyF8kZxNOEOEr/oajV3R2AWa3OaqpW5J/a4lCZukMgsfH4wL+GfRasoBBqJ0QEYHNaPGyrqJwC9rPdHeMx1JKmHDHTywrusoPbsB7YILzeCUU6B8WXf8KQFRg7MKkQACvoRW1RBd0RfMavQZmizazDA6QIPuv3PVtRZzl0gLCQsCYucVb5P1IUCmOkeN1QADgj6V4sYVk7f7ofwhoqPlYk/V3S3OFiVmBN0EFPm1yBKeSgoT1ZWT/rWo+Ja+/EaKHphTrcZqWkUbKxnoHwzFXTjpXGhovlG/9CODEnlMuUIFg79eCFkVx7+mRr1WUw/9lYlUF6slgT/FuvsF/IXxiCum4=
+  app: bindjs-spike
+  on:
+    repo: halvards/bindjs-spike
