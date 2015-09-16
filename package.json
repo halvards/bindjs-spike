@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch lib --watch public/bundle.js index.js",
+    "start": "forever --watch index.js",
     "test": "echo \"No tests yet\" && exit 0",
     "package": "webpack public/index.js public/bundle.js",
     "upgrade-deps": "npm-check-updates --upgrade"
@@ -16,10 +16,13 @@
     "node-uuid": "^1.4.3"
   },
   "devDependencies": {
-    "nodemon": "^1.5.0",
+    "forever": "^0.15.1",
     "npm-check-updates": "^2.2.3",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.10.1"
+  },
+  "engines": {
+    "node": "4.0.x"
   },
   "author": "Halvard Skogsrud",
   "license": "MIT",
