@@ -17,22 +17,11 @@
 
 <div class="ui container">
 
-  <div class="home page" style="">
-    <h1>Hello World!</h1>
+  {{> home }}
 
-    <p>Score: <input type="number" min=0 max=100 class="score"></p>
-    <p>Score: <input type="range" min=0 max=100 class="score"></p>
-  </div>
+  {{> other }}
 
-  <div class="other page" style="display: none;">
-    <h1>Other Page</h1>
-
-    <p>Text on other page.</p>
-  </div>
-
-  <div class="error page" style="display: none;">
-		<h1>Sorry, something went wrong</h1>
-	</div>
+  {{> error }}
 
 </div>
 

@@ -13,7 +13,10 @@
   },
   "dependencies": {
     "bind.js": "^1.0.1",
+    "body-parser": "^1.13.3",
+    "consolidate": "^0.13.1",
     "express": "^4.13.3",
+    "handlebars": "^4.0.2",
     "iframe-resizer": "^3.2.0",
     "node-uuid": "^1.4.3",
     "serve-favicon": "^2.3.0"
@@ -21,7 +24,6 @@
   "devDependencies": {
     "babel-core": "^5.8.24",
     "babel-loader": "^5.3.2",
-    "body-parser": "^1.13.3",
     "webpack": "^1.12.1"
   },
   "optionalDependencies": {
