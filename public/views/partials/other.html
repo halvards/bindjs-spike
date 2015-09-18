@@ -2,4 +2,26 @@
   <h1>Other Page</h1>
 
   <p>Text on other page.</p>
+
+  <ul id="books-list">
+  </ul>
+
+  <script id="books-template" type="x-handlebars-template">​
+		\{{#each this}}
+			<li data-index="{{id}}">
+				<h2>\{{title}}</h2>
+				<ul class="book-description">
+					<li>
+            Author(s):
+            \{{#each authors}}
+              \{{this}}
+            \{{/each}}
+          </li>
+				</ul>
+				<button>Buy Now!</button>
+				<p class="product-price">$\{{price}}</p>
+			</li>
+		\{{/each}}
+	</script> 
+
 </div>
