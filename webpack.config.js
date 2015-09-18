@@ -3,10 +3,10 @@
 var path = require('path');
 
 module.exports = {
-  context: path.join(__dirname, "/public"),
+  context: path.join(__dirname, "public"),
   entry: "./index.js",
   output: {
-      path: path.join(__dirname, "/public"),
+      path: path.join(__dirname, "public"),
       filename: "bundle.js"
   },
   module: {
@@ -20,5 +20,8 @@ module.exports = {
   },
   externals: {
     'jquery': 'jQuery'
+  },
+  node: {
+    fs: 'empty'
   }
 };
