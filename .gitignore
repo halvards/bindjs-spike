@@ -38,3 +38,4 @@ node_modules
 
 # Generated files
 public/bundle.js
+public/bundle.js.map

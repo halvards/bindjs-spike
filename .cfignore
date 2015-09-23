@@ -1,8 +1,7 @@
 node_modules/
+public/bundle.js.map
 .editorconfig
-.nvmrc
 .travis.yml
 Dockerfile
 LICENSE
 README.md
-webpack.config.js
