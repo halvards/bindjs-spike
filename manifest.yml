@@ -1,0 +1,6 @@
+---
+applications:
+  - name: bindjs-spike
+    command: node index.js
+    env:
+      NPM_CONFIG_PRODUCTION: false
