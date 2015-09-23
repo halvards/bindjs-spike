@@ -2,5 +2,8 @@
 applications:
   - name: bindjs-spike
     command: node index.js
+    disk_quota: 256M
+    instances: 1
+    memory: 128M
     env:
       NPM_CONFIG_PRODUCTION: false
