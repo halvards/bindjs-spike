@@ -8,8 +8,7 @@
     "start": "node index.js",
     "test": "echo \"No tests yet\" && exit 0",
     "postinstall": "webpack",
-    "dev": "forever --watch index.js",
-    "upgrade-deps": "npm-check-updates --upgrade"
+    "dev": "forever --watch index.js"
   },
   "dependencies": {
     "bind.js": "^1.0.1",
@@ -17,9 +16,7 @@
     "consolidate": "^0.13.1",
     "express": "^4.13.3",
     "handlebars": "^4.0.2",
-    "iframe-resizer": "^3.2.0",
-    "node-uuid": "^1.4.3",
-    "serve-favicon": "^2.3.0"
+    "node-uuid": "^1.4.3"
   },
   "devDependencies": {
     "babel-core": "^5.8.24",
@@ -27,11 +24,10 @@
     "webpack": "^1.12.1"
   },
   "optionalDependencies": {
-    "forever": "^0.15.1",
-    "npm-check-updates": "^2.2.3"
+    "forever": "^0.15.1"
   },
   "engines": {
-    "node": "4.x"
+    "node": "4.1.1"
   },
   "author": "Halvard Skogsrud",
   "license": "MIT",
