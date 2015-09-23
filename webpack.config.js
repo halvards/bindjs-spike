@@ -30,6 +30,9 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin()
   ],
+  externals: {
+    jquery: 'jQuery'
+  },
   node: {
     fs: 'empty'
   },
